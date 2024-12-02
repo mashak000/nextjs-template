@@ -28,10 +28,7 @@ export function init(debug: boolean): void {
     console.error('Something went wrong mounting the viewport', e);
   });
 
-  // Define components-related CSS variables.
-  viewport.bindCssVars();
-  miniApp.bindCssVars();
-  themeParams.bindCssVars();
+  
 
   // Add Eruda if needed.
   debug && import('eruda')
